@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>ChatBot</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1767/1767001.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'bot/style.css' %}" type="text/css">
+    
+</head>
+<body>
+  <div class="wrapper">
+    <div class="chat-box">
+      <div class="chat-head">
+        <h2>Chat Bot</h2>
+        <img src="https://maxcdn.icons8.com/windows10/PNG/16/Arrows/angle_down-16.png" title="Expand Arrow" width="16">
+      </div>
+      <div class="chat-body">
+        <div class="msg-insert">
+          <div class="msg-receive"> <p>Hello</p></div>
+        </div>
+        <div class="chat-text">
+          <textarea placeholder="Send"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'bot/main.js' %}"></script>
+</body>
+</html>
